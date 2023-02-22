@@ -8,7 +8,11 @@
 import SwiftUI
 
 public struct SwiftUIView: View {
-    @State public var text: String = ""
+    @State public var text: String
+    
+    public init(text: String) {
+        self.text = text
+    }
     
     public var body: some View {
         
@@ -22,8 +26,9 @@ public struct SwiftUIView: View {
     }
 }
 
+
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView()
+        SwiftUIView(text: "")
     }
 }
