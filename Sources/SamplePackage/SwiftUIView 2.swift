@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct SwiftUIView_2: View {
+public struct SwiftUIView_2: View {
     @State var num: Int = 0
     @Binding var text: String
     
-    init(text: Binding<String>) {
+    public init(text: Binding<String>) {
         _text = text
     }
     
-    var body: some View {
+    public var body: some View {
         
         Text("\(num)")
         Text(text)

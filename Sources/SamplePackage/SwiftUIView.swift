@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+public struct SwiftUIView: View {
     @State var text: String = ""
     
-    var body: some View {
+    public var body: some View {
         
         VStack(alignment: .leading) {
             SwiftUIView_2(text: $text)
