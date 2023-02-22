@@ -20,6 +20,7 @@ public struct SwiftUIView_2: View {
         Text("\(num)")
         Text(text)
             .font(.caption)
+            .frame(maxWidth: .infinity)
             .contextMenu {
                 Button {
                     num += 1
