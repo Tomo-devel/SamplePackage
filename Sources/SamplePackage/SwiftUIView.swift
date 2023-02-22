@@ -8,7 +8,7 @@
 import SwiftUI
 
 public struct SwiftUIView: View {
-    @State var text: String = ""
+    @State public var text: String = ""
     
     public var body: some View {
         
