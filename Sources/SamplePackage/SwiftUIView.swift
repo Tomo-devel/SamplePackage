@@ -21,6 +21,7 @@ public struct SwiftUIView: View {
                 .padding()
             
             TextField("入力", text: $text)
+                .textFieldStyle(.roundedBorder)
         }
         .padding()
     }
