@@ -17,7 +17,12 @@ public struct SwiftUIView_2: View {
     
     public var body: some View {
         
+        Image("shellingford")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+        
         Text("\(num)")
+        
         Text(text)
             .font(.caption)
             .frame(maxWidth: .infinity)
@@ -31,6 +36,7 @@ public struct SwiftUIView_2: View {
             }
     }
 }
+
 
 struct SwiftUIView_2_Previews: PreviewProvider {
     static var previews: some View {
