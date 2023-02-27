@@ -10,6 +10,7 @@ import SwiftUI
 public struct SwiftUIView_2: View {
     @State var num: Int = 0
     @Binding var text: String
+    let image = UIImage(named: "shellingford", in: Bundle.module, compatibleWith: nil)
     
     public init(text: Binding<String>) {
         _text = text
@@ -17,7 +18,7 @@ public struct SwiftUIView_2: View {
     
     public var body: some View {
         
-        Image("shellingford")
+        Image(uiImage: image!)
             .resizable()
             .aspectRatio(contentMode: .fit)
         
